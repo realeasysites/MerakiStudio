@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Studio Login · Meraki Studio</title>
+<link rel="icon" href="/img/brand/favicon-32.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/admin/assets/admin.css">
+</head>
+<body class="login-page">
+  <main class="login-card">
+    <img src="/img/brand/logo-dark.png" alt="Meraki Studio" class="login-logo">
+    <p class="login-kicker">Studio dashboard</p>
+    <form id="loginForm" autocomplete="on">
+      <label for="password">Password</label>
+      <input id="password" name="password" type="password" autocomplete="current-password" required autofocus>
+      <button type="submit">Sign in</button>
+      <p id="loginMsg" class="msg" role="alert"></p>
+    </form>
+    <a href="/" class="back">&larr; Back to website</a>
+  </main>
+  <script src="/admin/assets/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Requests · Meraki Studio</title>
+<link rel="icon" href="/img/brand/favicon-32.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/admin/assets/admin.css">
+</head>
+<body>
+  <header class="dash-head">
+    <img src="/img/brand/logo-dark.png" alt="Meraki Studio" class="dash-logo">
+    <div class="dash-actions">
+      <a href="/" target="_blank" rel="noopener">View site</a>
+      <button id="logout" class="ghost">Sign out</button>
+    </div>
+  </header>
+
+  <main class="dash">
+    <div class="tabs" role="tablist">
+      <button class="tab active" data-type="bookings" role="tab">Booking requests <span class="badge" id="badge-bookings"></span></button>
+      <button class="tab" data-type="applications" role="tab">Join the team <span class="badge" id="badge-applications"></span></button>
+    </div>
+
+    <div class="toolbar">
+      <div class="filters" id="statusFilters">
+        <button class="chip active" data-status="all">All</button>
+        <button class="chip" data-status="new">New</button>
+        <button class="chip" data-status="contacted">Contacted</button>
+        <button class="chip" data-status="booked">Booked</button>
+        <button class="chip" data-status="closed">Closed</button>
+      </div>
+      <select id="artistFilter" aria-label="Filter by artist"><option value="all">All artists</option></select>
+      <input id="search" type="search" placeholder="Search name, phone, service&hellip;" aria-label="Search">
+    </div>
+
+    <p class="hint">Tip: each artist books on their own schedule. Use the artist filter to see who a request is for, then mark it <em>Contacted</em> once someone reaches out. Delete anything that isn&rsquo;t a real request.</p>
+
+    <section id="list" class="list" aria-live="polite"></section>
+  </main>
+  <script src="/admin/assets/dashboard.js"></script>
+</body>
+</html>
